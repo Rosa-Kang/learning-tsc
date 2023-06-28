@@ -1,6 +1,6 @@
 {
   /**
-   * Enum
+   * Enum 여러가지 관련 상수값을 모아 관리해 주는 타입
    */
   // JavaScript
   const MAX_NUM = 6;
