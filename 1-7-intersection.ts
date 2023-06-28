@@ -1,25 +1,52 @@
 {
-  /**
-   * Intersection Types: &
-   */
+/**
+ * Intersection Types : &
+ */
+  
   type Student = {
     name: string;
     score: number;
-  };
+  }
 
   type Worker = {
-    empolyeeId: number;
+    employeeId: number;
     work: () => void;
   };
 
   function internWork(person: Student & Worker) {
-    console.log(person.name, person.empolyeeId, person.work());
+    console.log(person.name, person.employeeId, person.work());
   }
 
   internWork({
     name: 'ellie',
-    score: 1,
-    empolyeeId: 123,
-    work: () => {},
-  });
+    score: 100,
+    employeeId: 20230720,
+    work: () => {}
+  })
 }
+
+// {
+//   /**
+//    * Intersection Types: &
+//    */
+//   type Student = {
+//     name: string;
+//     score: number;
+//   };
+
+//   type Worker = {
+//     empolyeeId: number;
+//     work: () => void;
+//   };
+
+//   function internWork(person: Student & Worker) {
+//     console.log(person.name, person.empolyeeId, person.work());
+//   }
+
+//   internWork({
+//     name: 'ellie',
+//     score: 1,
+//     empolyeeId: 123,
+//     work: () => {},
+//   });
+// }
