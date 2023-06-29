@@ -1,3 +1,8 @@
+/**
+ * 다형성의 장점 : 내부적으로 구현된 다양한 클래스들이 한 가지 interface를 구현하거나, 또는 동일한 부모 클래스를 상속했을 때 동일한 함수를 어떤 클래스인 지 구분없이 동일한 api를 호출할 수 있음.
+ * const machines = []
+ * */
+ 
 {
   type CoffeeCup = {
     shots: number;
