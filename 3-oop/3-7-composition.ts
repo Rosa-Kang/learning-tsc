@@ -1,3 +1,8 @@
+/**
+ * Composition 
+ * 상속의 문제점 : 클래스 서로간의 관계가 복잡하게 꼬임. 족보가 꼬이는 문제.
+ */
+
 {
   type CoffeeCup = {
     shots: number;
@@ -143,5 +148,5 @@
     new AutomaticSugarMixer(),
     new FancyMilkSteamer()
   );
-  machine.makeCoffee(2);
+
 }
