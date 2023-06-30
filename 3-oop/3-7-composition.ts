@@ -1,6 +1,10 @@
 /**
- * Composition 
+ * Composition : 코드의 재사용을 높이는 
+ * CLASS 와 CLASS간에 관계(coupling)짓는 것은 좋지 않음!! 하나를 수정했을 때 모든 클래스를 변경해야 하는 문제발생--> Interface활용
  * 상속의 문제점 : 클래스 서로간의 관계가 복잡하게 꼬임. 족보가 꼬이는 문제.
+ * favor composition over inheritance.
+ * Dependancy injection
+ * constructor(beans:number, public readonly serialNumber: string, private milkFrother: CheapMilkSteamer)
  */
 
 {
@@ -148,5 +152,5 @@
     new AutomaticSugarMixer(),
     new FancyMilkSteamer()
   );
-
+  machine.makeCoffee(2);
 }
