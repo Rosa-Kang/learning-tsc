@@ -1,6 +1,6 @@
 /**
- * Pick : 기존 타입에서 원하는 데이터만을 가지고 새로운 타입을 만듦.
- *  Pick<Type, 'key1' | 'key2'>;
+ * Omit : 정의된 타입에서 원하지 않는 key들을 제외한 데이터들을 가져와서 새로운 타입들을 만듦.
+ * Omit<Video, 'url' | 'data'>; // url 과 data 빼고 다 가져옴.
  */
 
 {
@@ -11,7 +11,7 @@
     data: string;
   };
 
-  type VideoMetadata = Pick<Video, 'id' | 'title'>;
+  type VideoMetadata = Omit<Video, 'url' | 'data'>;
 
   function getVideo(id: string): Video {
     return {
